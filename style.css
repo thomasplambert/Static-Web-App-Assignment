@@ -1,0 +1,53 @@
+/* Hide default scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+}
+
+/* Custom scrollbar track */
+.hooty-scrollbar {
+  position: fixed;
+  right: 20px;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  pointer-events: none;
+}
+
+/* Hooty's stretchy body */
+.hooty-body {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  border: 1px solid black;
+  border-bottom: 0;
+  border-top: 0;
+  background-color: rgb(179, 121, 60); /* or a color */
+  background-repeat: repeat-y;
+  height: 0; /* Will grow with scroll */
+  transition: height 0.1s;
+}
+
+/* Hooty's head (the thumb) */
+.hooty-head {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  transition: top 0.1s;
+  top: -30px;
+}
+
+.hooty-head img {
+  width: 100%;
+}
+
+.test-scroll {
+    height: 5000px;
+    background: white;
+}
