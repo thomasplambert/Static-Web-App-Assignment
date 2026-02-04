@@ -11,7 +11,7 @@ function updateHooty(){
   document.querySelector('.hooty-head').style.top = headPosition + 'px';
   
   // Stretch Hooty's body
-  document.querySelector('.hooty-body').style.height = (headPosition+33) + 'px';
+  document.querySelector('.hooty-body').style.height = (headPosition+) + 'px';
 }
 
 window.addEventListener('scroll', updateHooty);
