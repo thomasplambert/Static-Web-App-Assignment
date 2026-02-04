@@ -21,26 +21,25 @@ body {
 .hooty-body {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 85%;
+  height:0; /* Will grow with scroll */
   transform: translateX(-50%);
-  width: 60px;
+  width: 53px;
   border: 1px solid black;
   border-bottom: 0;
   border-top: 0;
   background-color: rgb(179, 121, 60); /* or a color */
   background-repeat: repeat-y;
-  height: 0; /* Will grow with scroll */
-  transition: height 0.1s;
+  
+  /*transition: height 0.1s;*/
 }
 
 /* Hooty's head (the thumb) */
 .hooty-head {
   position: absolute;
-  left: 50%;
+  left: 85%;
   transform: translateX(-50%);
   width: 60px;
-  transition: top 0.1s;
-  top: -30px;
 }
 
 .hooty-head img {
@@ -50,4 +49,17 @@ body {
 .test-scroll {
     height: 5000px;
     background: white;
+}
+
+.img-large {
+  background-color: antiquewhite;
+  top:20%;
+  height: 200px;
+  width:200%;
+
+}
+
+#hooty-door{
+  height: 100%;
+  width: 100%;
 }
